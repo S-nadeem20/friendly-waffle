@@ -1,0 +1,18 @@
+---
+title: "READ.ME"
+output: html_document
+date: '2022-11-08'
+---
+
+This repository contains an analysis of git usage through time.
+
+To run this analysis use the following comand:
+
+"
+Rscript src/make-plot.R
+"
+The input data is in 'data' and the results are in 'out'.
+
+sink(file = "out/package-versions.text")
+sessionInfo()
+sink
